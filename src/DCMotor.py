@@ -29,6 +29,6 @@ class DCMotor:
     def set_accel(self, val):
         self.set_pool(3, val)
 
-    def close_port(self, device):
-        self.close_port = True
+    def close_port(self):
+        self.device.close_port = True
         return
